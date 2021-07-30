@@ -10,8 +10,98 @@
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
 		/>
-		<link rel="stylesheet" href="../styles/contact.css" />
 	</head>
+	<style>
+		* {
+			padding: 0;
+			box-sizing: border-box;
+			margin: 0;
+		}
+		html {
+			overflow-x: hidden;
+		}
+		body {
+			width: 100vw;
+		}
+		.row {
+			overflow-x: hidden;
+		}
+
+		nav {
+			z-index: 9;
+			position: fixed;
+			top: 0;
+		}
+
+		.formc,
+		.adCont {
+			width: 100vw;
+			padding: 0 50px;
+		}
+		/* global */
+		#contact {
+			height: fit-content;
+			margin: 0 !important;
+			padding: 90px 0;
+		}
+		@media (max-width: 430px) {
+			.adCont h1 {
+				font-size: 3rem;
+				font-weight: bold;
+			}
+		}
+		form {
+			margin: 40px 0 0 0;
+			padding: 20px;
+		}
+
+		.input-field input:focus {
+			border-bottom: 1px solid #1976d2 !important;
+			box-shadow: 0 1px 0 0 #1976d2 !important;
+		}
+		.input-field input:focus + label {
+			color: #1976d2 !important;
+		}
+		.input-field textarea:focus + label {
+			color: #1976d2 !important;
+		}
+
+		.input-field textarea:focus {
+			border-bottom: 1px solid #1976d2 !important;
+			box-shadow: 0 1px 0 0 #1976d2 !important;
+		}
+
+		.adcard {
+			padding: 6px !important;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 13rem;
+		}
+
+		@media (max-width: 600px) {
+			.adcard {
+				width: 100%;
+				height: 10rem;
+				margin-left: auto;
+				margin-right: auto;
+			}
+		}
+		@media (min-width: 992px) {
+			.formc,
+			.adCont {
+				padding: 0 100px;
+			}
+		}
+		/* contact */
+
+		footer {
+			width: 100vw;
+			padding: 50px !important;
+			margin-bottom: 0 !important;
+		}
+		/* footer */
+	</style>
 	<body>
 		<nav class="nav-wrapper black white-text z-depth-2">
 			<div class="container">
